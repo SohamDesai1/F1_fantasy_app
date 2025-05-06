@@ -1,0 +1,67 @@
+# Rust
+/backend/target
+**/*.rs.bk
+
+# Flutter
+/frontend/.dart_tool/
+/frontend/.packages
+/frontend/build/
+/frontend/ios/Flutter/Flutter.framework
+/frontend/pubspec.lock
+# Miscellaneous
+/frontend/*.class
+/frontend/*.log
+/frontend/*.pyc
+/frontend/*.swp
+/frontend/.DS_Store
+/frontend/.atom/
+/frontend/.buildlog/
+/frontend/.history
+/frontend/.svn/
+/frontend/migrate_working_dir/
+/frontend/# IntelliJ related
+/frontend/*.iml
+/frontend/*.ipr
+/frontend/*.iws
+/frontend/.idea/
+/frontend/# The .vscode folder contains launch configuration and tasks you configure in
+/frontend/# VS Code which you may wish to be included in version control, so this line
+/frontend/# is commented out by default.
+/frontend/#.vscode/
+/frontend/# Flutter/Dart/Pub related
+/frontend/**/doc/api/
+/frontend/**/ios/Flutter/.last_build_id
+/frontend/.dart_tool/
+/frontend/.flutter-plugins
+/frontend/.fvm
+/frontend/.flutter-plugins-dependencies
+/frontend/.packages
+/frontend/.pub-cache/
+/frontend/.pub/
+/frontend/build/
+/frontend/# Symbolication related
+/frontend/app.*.symbols
+/frontend/# Obfuscation related
+/frontend/app.*.map.json
+/frontend/# Android Studio will place build artifacts here
+/frontend/android/app/debug
+/frontend/android/app/profile
+/frontend/android/app/release
+/frontend/android
+/frontend/ios
+/frontend/macos
+/frontend/web
+/frontend/windows
+/frontend/linux
+/frontend/analysis_options.yaml
+/frontend/lib/firebase_options.dart
+/frontend/tests
+/frontend/lib/demo.dart
+/frontend/.env
+/frontend/*.json
+/frontend/supabase
+/frontend/# General
+/frontend/.DS_Store
+/frontend/.idea/
+/frontend/.vscode/
+/frontend/.env
