@@ -1,6 +1,7 @@
 # Rust
 /backend/target
 **/*.rs.bk
+/**/.env
 
 # Flutter
 /frontend/.dart_tool/
