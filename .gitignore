@@ -66,5 +66,6 @@
 /frontend/.idea/
 /frontend/.vscode/
 /frontend/.env
+/frontend/lib/utils/injection.config.dart
 *.idea/
 *.env*
