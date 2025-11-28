@@ -3,7 +3,18 @@ import 'package:sizer/sizer.dart';
 
 class DriverCard extends StatelessWidget {
   final bool raceResult;
-  const DriverCard({super.key, this.raceResult = false});
+  final String? driverName;
+  final String? teamName;
+  final String? position;
+  final String? points;   
+  const DriverCard({
+    super.key,
+    this.raceResult = false,
+    this.driverName,
+    this.teamName,
+    this.position,
+    this.points,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -12,28 +23,18 @@ class DriverCard extends StatelessWidget {
       children: [
         Row(
           children: [
-            CircleAvatar(
-              radius: 5.w,
-            ),
-            SizedBox(
-              width: 4.w,
-            ),
+            CircleAvatar(radius: 5.w),
+            SizedBox(width: 4.w),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Lando Norris",
-                  style: TextStyle(
-                    fontSize: 4.w,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  driverName ?? "L. Hamilton",
+                  style: TextStyle(fontSize: 4.w, fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  "McLaren",
-                  style: TextStyle(
-                    fontSize: 3.w,
-                    color: Colors.grey,
-                  ),
+                  teamName ?? "Mercedes",
+                  style: TextStyle(fontSize: 3.w, color: Colors.grey),
                 ),
               ],
             ),
@@ -48,21 +49,20 @@ class DriverCard extends StatelessWidget {
                 width: 10.w,
                 height: 3.h,
                 child: Center(
-                    child: Text(
-                  "P1",
-                  style: TextStyle(
-                    fontSize: 4.w,
-                    fontWeight: FontWeight.bold,
+                  child: Text(
+                    "P$position" ?? "",
+                    style: TextStyle(
+                      fontSize: 4.w,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                )))
+                ),
+              )
             : Container(
                 margin: EdgeInsets.only(left: 20.w),
                 child: Text(
-                  "256 pts",
-                  style: TextStyle(
-                    fontSize: 4.w,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  "$points pts",
+                  style: TextStyle(fontSize: 4.w, fontWeight: FontWeight.bold),
                 ),
               ),
       ],
