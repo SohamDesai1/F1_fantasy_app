@@ -4,6 +4,8 @@ import 'package:frontend/core/constants/route_names.dart';
 import 'package:frontend/presentation/home/cubit/dashboard/dashboard_cubit.dart';
 import 'package:frontend/presentation/home/views/widgets/carousel.dart';
 import 'package:frontend/presentation/home/views/widgets/driver_card.dart';
+import 'package:frontend/presentation/home/views/widgets/driver_standing_card.dart';
+import 'package:frontend/presentation/home/views/widgets/driver_standings_carousel.dart';
 import 'package:frontend/presentation/home/views/widgets/upcoming_card.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
@@ -144,26 +146,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     ),
                     SizedBox(height: 2.h),
 
-                    SizedBox(
-                      height: 20.h,
-                      child: ListView.builder(
-                        physics: NeverScrollableScrollPhysics(),
-                        itemCount: 3,
-                        itemBuilder: (_, index) {
-                          final r = recent.results[index];
-                          return Padding(
-                            padding: EdgeInsets.only(bottom: 2.h),
-                            child: DriverCard(
-                              driverName:
-                                  "${r.driver.givenName} ${r.driver.familyName}",
-                              teamName: r.constructor.name,
-                              position: r.position,
-                              raceResult: true,
-                            ),
-                          );
-                        },
-                      ),
-                    ),
+                    DriverStandingsCarousel(results: recent.results),
                   ],
 
                   SizedBox(height: 3.h),

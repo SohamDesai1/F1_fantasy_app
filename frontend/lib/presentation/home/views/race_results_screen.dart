@@ -36,10 +36,6 @@ class _RaceResultsScreenState extends State<RaceResultsScreen> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                widget.raceName,
-                style: TextStyle(fontSize: 4.w, fontWeight: FontWeight.w500),
-              ),
               SizedBox(height: 2.h),
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.75,
