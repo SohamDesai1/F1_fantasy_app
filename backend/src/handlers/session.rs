@@ -682,7 +682,7 @@ const TTL_SECONDS: i64 = 60 * 60;
 
 pub async fn fetch_driver_telemetry(
     State(state): State<Arc<AppState>>,
-    Path((session_key, driver_number)): Path<(String, String)>,
+    Path((session_key, driver_number)): Path<(u8, u8)>,
 ) -> impl IntoResponse {
     let session_key = session_key.clone();
     let driver_number = driver_number.clone();
