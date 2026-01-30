@@ -6,7 +6,6 @@
 # Flutter
 /frontend/.dart_tool/
 /frontend/.packages
-/frontend/build/
 /frontend/ios/Flutter/Flutter.framework
 /frontend/pubspec.lock
 # Miscellaneous
@@ -39,7 +38,6 @@
 /frontend/.packages
 /frontend/.pub-cache/
 /frontend/.pub/
-/frontend/build/
 /frontend/# Symbolication related
 /frontend/app.*.symbols
 /frontend/# Obfuscation related
@@ -51,7 +49,6 @@
 /frontend/android
 /frontend/ios
 /frontend/macos
-/frontend/web
 /frontend/windows
 /frontend/linux
 /frontend/analysis_options.yaml
