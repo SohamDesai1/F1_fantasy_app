@@ -56,7 +56,6 @@
 /frontend/tests
 /frontend/lib/demo.dart
 /frontend/.env
-/frontend/*.json
 /frontend/supabase
 /frontend/# General
 /frontend/.DS_Store

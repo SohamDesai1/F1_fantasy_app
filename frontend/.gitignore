@@ -52,7 +52,6 @@ app.*.map.json
 /tests
 /lib/demo.dart
 .env
-*.json
 /supabase
 *.freezed.dart
 *.g.dart
